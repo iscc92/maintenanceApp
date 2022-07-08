@@ -1,0 +1,10 @@
+version: '2'
+services:
+  postgres-compose:
+    image: postgres
+    environment:
+      POSTGRES_DB: maintenance
+      POSTGRES_PASSWORD: nicepass
+      POSTGRES_USER: quarkus
+    ports:
+      - "5432:5432"
